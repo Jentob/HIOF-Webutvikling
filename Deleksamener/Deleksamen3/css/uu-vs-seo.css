@@ -1,0 +1,13 @@
+main .container {
+  width: 100%;
+  max-width: 800px;
+  padding: 4rem 2rem 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+abbr {
+  text-decoration: none;
+}

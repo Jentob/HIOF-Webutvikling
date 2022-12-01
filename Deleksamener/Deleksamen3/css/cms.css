@@ -1,0 +1,45 @@
+main .container {
+  width: 100%;
+  max-width: 800px;
+  padding: 4rem 2rem 0;
+  color: var(--secondary);
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.table {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  overflow-x: scroll;
+}
+
+.table-header {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-size: 1rem
+}
+
+
+.table > div {
+  padding: 8px;
+  border-bottom: 1px var(--secondary) solid;
+  border-right: 1px var(--secondary) solid;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .table div {
+    font-size: 1rem;
+  }
+  .table-header {
+    font-size: 1.5rem;
+  }
+}
