@@ -1,0 +1,149 @@
+main .container {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "intro"
+    "card"
+    "contact-us";
+  gap: 2rem 0;
+}
+
+.home-hero {
+  grid-area: hero;
+  background: rgb(32, 200, 255);
+  background: linear-gradient(160deg, rgb(80, 200, 255), rgb(0, 255, 200));
+  background: url(../r/hero-img-s.webp) no-repeat center center;
+  background-size: cover;
+  /* Bildet hentet fra https://www.pexels.com/nb-no/bilde/surfebrett-surfe-oy-farge-5006655/ */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.home-hero div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3rem 1.2rem;
+  text-align: center;
+}
+
+.home-hero h1 {
+  color: var(--secondary);
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.home-hero h1 span {
+  white-space: nowrap;
+}
+
+.intro {
+  grid-area: intro;
+  padding: 0 4rem;
+}
+
+.intro p {
+  margin: 1rem 0;
+  color: var(--secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card {
+  grid-area: card;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card article {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card h2 {
+  color: var(--secondary);
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card > article > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.card img {
+  display: block;
+  height: 150px;
+  aspect-ratio: 1;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.card a {
+  color: var(--secondary);
+}
+
+#co-link {
+  width: fit-content;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#co-link:hover {
+  background: var(--nav-hover);
+  color: var(--secondary);
+}
+
+@@media only screen and (min-width: 600px) {
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  main .container {
+    grid-template-columns: 1fr min(500px, 50%) min(500px, 50%) 1fr;
+    grid-template-areas:
+      "hero hero hero hero"
+      ". intro intro ."
+      ". card card .";
+    gap: 4rem 0;
+  }
+  .home-hero div {
+    padding: 6rem;
+  }
+  .home-hero h1 {
+    font-size: 3rem;
+  }
+  .intro p {
+    font-size: 1.25rem;
+  }
+  .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 2048px) {
+  .home-hero {
+    background: url(../r/hero-img-s.webp) no-repeat center center;
+    background-size: cover;
+  }
+}

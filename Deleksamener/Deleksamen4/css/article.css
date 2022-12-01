@@ -1,0 +1,146 @@
+:root {
+  --table-border: 1px var(--secondary) solid;
+}
+
+main .container {
+  width: 100%;
+  max-width: 800px;
+  padding: 4rem 2rem 0;
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+.table h3 {
+  margin: 0;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+p a {
+  color: var(--secondary);
+}
+
+.table {
+  display: grid;
+  overflow-x: scroll;
+  margin-bottom: 2rem
+}
+
+.table.x5 {
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.table.x4 {
+  grid-template-columns: auto auto auto auto;
+}
+
+.table.x3 {
+  grid-template-columns: auto auto auto;
+}
+
+.table-header {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.top {
+  border-top: var(--table-border);
+}
+.left {
+  border-left: var(--table-border);
+}
+
+.table-header > h2,
+.table-header > p {
+  margin: 0;
+}
+
+.table > div {
+  padding: 8px;
+  border-bottom: var(--table-border);
+  border-right: var(--table-border);
+  font-size: 0.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .table div {
+    font-size: 1rem;
+  }
+  .table-header {
+    font-size: 1.5rem;
+  }
+}
+
+#map {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#tlf {
+  list-style: none;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  border: 1px var(--secondary) solid;
+  border-radius: 4px;
+  resize: vertical;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 2px;
+}
+
+input[type="submit"] {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+  background: var(--nav-hover);
+  color: var(--secondary);
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 2rem;
+}
+
+main img {
+  border: var(--table-border);
+  border-radius: 4px;
+}

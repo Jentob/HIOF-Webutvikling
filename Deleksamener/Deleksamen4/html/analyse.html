@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nb-no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deleksamen 3 - Tobias Jensen - Analyse</title>
+    <meta name="Description" content="En analyse av dette nettstedet">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="../r/favicon/android-chrome-192x192.png">
+    <meta property="og:title" content="Deleksamen 4 - Tobias Jensen - Analyse">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://itstud.hiof.no/~tobiasje/r/favicon/android-chrome-192x192.png">
+    <meta property="og:url" content="https://itstud.hiof.no/~tobiasje/">
+    <!-- https://fontawesome.com -->
+      <link rel="preload" href="../css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="../css/brands.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="../css/solid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- / -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../r/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../r/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../r/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../r/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <script src="../js/hb.js" defer></script>
+  </head>
+  <body>
+    <a name="main_content" href="#main" id="main_content"></a>
+    <header>
+      <div class="container">
+        <a href="../index.html" id="nav-logo"><img src="../r/logo.svg" alt="Logo"></a>
+        <nav>
+          <button id="hb" aria-label="Åpne navigasjonsmenyen">
+            <img src="../r/hb.svg" alt="navbar toggle" aria-hidden="true">
+          </button>
+          <ul id="main-nav">
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
+            <li><a href="cms.html">CMS</a></li>
+            <li><a href="analyse.html">Analyse</a></li>
+            <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <article>
+          <h1>Analyse</h1>
+          <h2>Lighthouse</h2>
+          <p>
+            Jeg brukte Lightouse for å analysere nettsiden min. Problemene som
+            sto ut var: På forsiden anbefalte den wemP eller ASIF for bilder
+            istedenfor jpg som jeg brukte. På Kontakt oss-siden har ikke iframen
+            en tittel.
+          </p>
+          <div class="table x5">
+            <div><!-- Blank --></div>
+            <div class="table-header top"><h3>Ytelse</h3></div>
+            <div class="table-header top"><h3>UU</h3></div>
+            <div class="table-header top"><h3>Beste praksiser</h3></div>
+            <div class="table-header top"><h3>SEO</h3></div>
+            <div class="table-header left"><h3>Forside</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>UU vs SEO</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>CMS</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>Kontakt oss</h3></div>
+            <div>99</div>
+            <div>98</div>
+            <div>92</div>
+            <div>100</div>
+          </div>
+          <p>
+            Etter at jeg konvertete bildene til webP og la til en tittel for
+            iframen fikk jeg disse resultatene i Lighthouse.
+          </p>
+          <div class="table x5">
+            <div><!-- Blank --></div>
+            <div class="table-header top"><h3>Ytelse</h3></div>
+            <div class="table-header top"><h3>UU</h3></div>
+            <div class="table-header top"><h3>Beste praksiser</h3></div>
+            <div class="table-header top"><h3>SEO</h3></div>
+            <div class="table-header left"><h3>Forside</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>UU vs SEO</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>CMS</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+            <div class="table-header left"><h3>Kontakt oss</h3></div>
+            <div>99</div>
+            <div>100</div>
+            <div>100</div>
+            <div>100</div>
+          </div>
+          <h2>WAVE</h2>
+          <p>
+            Jeg brukte også wave for å sjekke UU. Det dukket ikke opp noen feil.
+            <img src="../r/wave.jpg" alt="Wave analyse: Ingen feil, ingen kontrastproblemer">
+          </p>
+          <h2>Heuristisk evaluering</h2>
+          <p>
+            Jeg gjorde også en heuristisk evaluering av nettsiden bassert på
+            disse 10 prinsippene fra
+            <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">denne nettsiden</a>.
+            Nettisiden min når alle punktene.
+          </p>
+          <h2>Tilgjengelighetserklæring</h2>
+          <p>
+            <a href="tilgjengelighetserklæring.html">Tilgjengelighetserklæring</a>
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#" class="facebook" aria-label="Del på Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="pinterest" aria-label="Del på Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="twitter" aria-label="Del på Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
