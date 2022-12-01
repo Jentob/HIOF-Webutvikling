@@ -1,7 +1,0 @@
-<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" class="h-12 w-12">
-  <g stroke="rgb(30, 30, 30)" stroke-linecap="round">
-    <line x1="1" y1="3" x2="11" y2="3"></line>
-    <line x1="1" y1="6" x2="11" y2="6"></line>
-    <line x1="1" y1="9" x2="11" y2="9"></line>
-  </g>
-</svg>
